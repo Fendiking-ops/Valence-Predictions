@@ -5,7 +5,6 @@
         .header h2 { color: #ffffff; margin: 0; text-transform: uppercase; letter-spacing: 2px; font-weight: 900; font-size: 26px; }
         .header p { color: #94a3b8; font-size: 13px; margin-top: 8px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 0; }
         
-        /* Calendar UI */
         .calendar-nav { display: flex; overflow-x: auto; gap: 10px; margin-bottom: 20px; padding-bottom: 5px; scrollbar-width: none; }
         .calendar-nav::-webkit-scrollbar { display: none; }
         .cal-date { background: #ffffff; border: 1px solid #cbd5e1; padding: 10px 16px; border-radius: 8px; cursor: pointer; white-space: nowrap; font-weight: 800; color: #475569; font-size: 13px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); transition: 0.2s; }
@@ -44,7 +43,6 @@
             if(document.getElementById('day-' + dateStr)) document.getElementById('day-' + dateStr).classList.add('active');
             if(document.getElementById('btn-' + dateStr)) document.getElementById('btn-' + dateStr).classList.add('active');
         }
-        // Auto-scroll calendar to today
         window.onload = function() {
             let todayBtn = document.getElementById('btn-2026-10-21');
             if(todayBtn) todayBtn.scrollIntoView({behavior: "smooth", inline: "center"});
