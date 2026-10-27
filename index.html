@@ -47,10 +47,14 @@
             document.querySelectorAll('.cal-date').forEach(el => el.classList.remove('active'));
             if(document.getElementById('day-' + dateStr)) document.getElementById('day-' + dateStr).classList.add('active');
             if(document.getElementById('btn-' + dateStr)) document.getElementById('btn-' + dateStr).classList.add('active');
+            window.location.hash = dateStr; // Save date in URL hash so refresh keeps position
         }
         window.onload = function() {
-            let todayBtn = document.getElementById('btn-2026-10-27');
-            if(todayBtn) todayBtn.scrollIntoView({behavior: "smooth", inline: "center"});
+            let hashDate = window.location.hash ? window.location.hash.substring(1) : '';
+            let targetDate = document.getElementById('day-' + hashDate) ? hashDate : '2026-10-27';
+            showDate(targetDate);
+            let activeBtn = document.getElementById('btn-' + targetDate);
+            if(activeBtn) activeBtn.scrollIntoView({behavior: "smooth", inline: "center"});
         };
     </script>
     </head><body><div class="valence-container">
