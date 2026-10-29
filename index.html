@@ -51,7 +51,7 @@
         }
         window.onload = function() {
             let hashDate = window.location.hash ? window.location.hash.substring(1) : '';
-            let targetDate = document.getElementById('day-' + hashDate) ? hashDate : '2026-10-28';
+            let targetDate = document.getElementById('day-' + hashDate) ? hashDate : '2026-10-29';
             showDate(targetDate);
             let activeBtn = document.getElementById('btn-' + targetDate);
             if(activeBtn) activeBtn.scrollIntoView({behavior: "smooth", inline: "center"});
@@ -125,23 +125,7 @@
             
             </div>
         </div>
-        <div class="calendar-nav"><div id="btn-2026-10-21" class="cal-date" onclick="showDate('2026-10-21')">21 Oct</div><div id="btn-2026-10-22" class="cal-date" onclick="showDate('2026-10-22')">22 Oct</div><div id="btn-2026-10-23" class="cal-date" onclick="showDate('2026-10-23')">23 Oct</div><div id="btn-2026-10-24" class="cal-date" onclick="showDate('2026-10-24')">24 Oct</div><div id="btn-2026-10-25" class="cal-date" onclick="showDate('2026-10-25')">25 Oct</div><div id="btn-2026-10-26" class="cal-date" onclick="showDate('2026-10-26')">26 Oct</div><div id="btn-2026-10-27" class="cal-date" onclick="showDate('2026-10-27')">27 Oct</div><div id="btn-2026-10-28" class="cal-date active" onclick="showDate('2026-10-28')">Today</div><div id="btn-2026-10-29" class="cal-date" onclick="showDate('2026-10-29')">29 Oct</div><div id="btn-2026-10-30" class="cal-date" onclick="showDate('2026-10-30')">30 Oct</div><div id="btn-2026-10-31" class="cal-date" onclick="showDate('2026-10-31')">31 Oct</div><div id="btn-2026-11-01" class="cal-date" onclick="showDate('2026-11-01')">01 Nov</div><div id="btn-2026-11-02" class="cal-date" onclick="showDate('2026-11-02')">02 Nov</div><div id="btn-2026-11-03" class="cal-date" onclick="showDate('2026-11-03')">03 Nov</div><div id="btn-2026-11-04" class="cal-date" onclick="showDate('2026-11-04')">04 Nov</div></div><div id="day-2026-10-21" class="day-group">
-                <div class="match-card card-P1">
-                    <div class="league-badge">🏆 Copa Sudamericana</div>
-                    <div class="match-title"><span class="expert-badge">🤖 V-Chidi</span> Montevideo City Torque vs Clube Atlético Mineiro</div>
-                    <div style="margin-bottom: 12px; font-size: 13.5px; color: #475569; font-weight: 600; display: flex; align-items: center; flex-wrap: wrap; gap: 8px;">
-                        <span class="status-badge-pending">PENDING</span> <span>1X: <b>0.95</b></span> | <span>2X: <b>14.09</b></span> | <span>23:00</span>
-                    </div>
-                    <div class="outcome-box">
-                        <span style="color: #0f172a;">🎯 AI Generation:</span> <b>1</b> (Score: 2-1) <br> 
-                        <div style="margin-top: 4px; font-weight: 600; color: #475569;">⚙️ Theoretical Target: Home Win / O1.5<br>CRITICAL: Market Odds Lock</div>
-                        <div style="margin-top: 4px; font-size: 12px; color: #64748b;">(Triggers: P1,P14)</div>
-                    </div>
-                    <div class="strict-eval-box eval-P1">
-                        <div class="strict-eval-verdict" style="color: #3b82f6;">VERDICT: LEARNING</div>
-                        <div style="font-size: 13px; font-weight: 700; color: #475569; margin-top: 4px;">📡 SYSTEM: <span style="font-weight: 600;">Engine is calibrating this exact odds pocket.</span></div>
-                    </div>
-                </div></div><div id="day-2026-10-22" class="day-group">
+        <div class="calendar-nav"><div id="btn-2026-10-22" class="cal-date" onclick="showDate('2026-10-22')">22 Oct</div><div id="btn-2026-10-23" class="cal-date" onclick="showDate('2026-10-23')">23 Oct</div><div id="btn-2026-10-24" class="cal-date" onclick="showDate('2026-10-24')">24 Oct</div><div id="btn-2026-10-25" class="cal-date" onclick="showDate('2026-10-25')">25 Oct</div><div id="btn-2026-10-26" class="cal-date" onclick="showDate('2026-10-26')">26 Oct</div><div id="btn-2026-10-27" class="cal-date" onclick="showDate('2026-10-27')">27 Oct</div><div id="btn-2026-10-28" class="cal-date" onclick="showDate('2026-10-28')">28 Oct</div><div id="btn-2026-10-29" class="cal-date active" onclick="showDate('2026-10-29')">Today</div><div id="btn-2026-10-30" class="cal-date" onclick="showDate('2026-10-30')">30 Oct</div><div id="btn-2026-10-31" class="cal-date" onclick="showDate('2026-10-31')">31 Oct</div><div id="btn-2026-11-01" class="cal-date" onclick="showDate('2026-11-01')">01 Nov</div><div id="btn-2026-11-02" class="cal-date" onclick="showDate('2026-11-02')">02 Nov</div><div id="btn-2026-11-03" class="cal-date" onclick="showDate('2026-11-03')">03 Nov</div><div id="btn-2026-11-04" class="cal-date" onclick="showDate('2026-11-04')">04 Nov</div><div id="btn-2026-11-05" class="cal-date" onclick="showDate('2026-11-05')">05 Nov</div></div><div id="day-2026-10-22" class="day-group">
                 <div class="match-card card-P1">
                     <div class="league-badge">🏆 Copa Libertadores</div>
                     <div class="match-title"><span class="expert-badge">🤖 V-Chidi</span> Palmeiras-SP vs Fluminense-RJ</div>
@@ -1523,7 +1507,7 @@
                         <div class="strict-eval-verdict" style="color: #3b82f6;">VERDICT: LEARNING</div>
                         <div style="font-size: 13px; font-weight: 700; color: #475569; margin-top: 4px;">📡 SYSTEM: <span style="font-weight: 600;">Engine is calibrating this exact odds pocket.</span></div>
                     </div>
-                </div></div><div id="day-2026-10-28" class="day-group active">
+                </div></div><div id="day-2026-10-28" class="day-group">
                 <div class="match-card card-P4">
                     <div class="league-badge">🏆 Brazil Série B</div>
                     <div class="match-title"><span class="expert-badge">🤖 V-Kenzo</span> Ceará vs Goiás</div>
@@ -1699,7 +1683,7 @@
                         <div class="strict-eval-verdict" style="color: #3b82f6;">VERDICT: LEARNING</div>
                         <div style="font-size: 13px; font-weight: 700; color: #475569; margin-top: 4px;">📡 SYSTEM: <span style="font-weight: 600;">Engine is calibrating this exact odds pocket.</span></div>
                     </div>
-                </div></div><div id="day-2026-10-29" class="day-group">
+                </div></div><div id="day-2026-10-29" class="day-group active">
                 <div class="match-card card-P4">
                     <div class="league-badge">🏆 Brazil Série A</div>
                     <div class="match-title"><span class="expert-badge">🤖 V-Kenzo</span> Bahia vs Sao Paulo</div>
@@ -2372,6 +2356,12 @@
                         <div style="font-size: 13px; font-weight: 700; color: #475569; margin-top: 4px;">📡 SYSTEM: <span style="font-weight: 600;">Engine is calibrating this exact odds pocket.</span></div>
                     </div>
                 </div></div><div id="day-2026-11-04" class="day-group">
+            <div class="match-card" style="border-left-color: #ef4444; text-align: center; padding: 40px 20px;">
+                <div style="font-size: 28px; margin-bottom: 15px;">🛡️</div>
+                <div style="font-size: 18px; font-weight: 900; color: #0f172a; margin-bottom: 8px; text-transform: uppercase;">MARKET LOCKDOWN</div>
+                <div style="font-size: 14px; color: #475569; line-height: 1.6; max-width: 90%; margin: 0 auto;">No global matches met the Valence Wisdom Machine's strict P1-P14 safety protocols today. Our virtual experts are holding position to protect win rates.</div>
+            </div>
+            <a href="https://wa.me/2348000000000" target="_blank" style="text-decoration:none;"><div class="ad-card-native"><div style="color: #64748b; font-size: 11px; font-weight: 800; letter-spacing: 1px;">SPONSORED PROMOTION</div><div style="color: #0f172a; font-size: 14px; font-weight: 700; margin-top: 4px;">📢 RENT THIS SPACE - CONTACT ADMIN</div></div></a></div><div id="day-2026-11-05" class="day-group">
             <div class="match-card" style="border-left-color: #ef4444; text-align: center; padding: 40px 20px;">
                 <div style="font-size: 28px; margin-bottom: 15px;">🛡️</div>
                 <div style="font-size: 18px; font-weight: 900; color: #0f172a; margin-bottom: 8px; text-transform: uppercase;">MARKET LOCKDOWN</div>
